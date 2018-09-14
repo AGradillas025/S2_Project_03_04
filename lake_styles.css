@@ -1,0 +1,106 @@
+﻿@charset "utf-8";
+
+@font-face {
+    font-family: Champagne;
+    src: url('cac_champagne.woff') format("woff"),
+        url('cac_champagne.ttf') format('ttf');
+}
+
+@font-face {
+    font-family: Dobkin;
+    src: url('DobkinPlain.woff') format('woff'),
+        url('DobkinPlain.ttf') format('ttf');
+}
+
+/*
+   New Perspectives on HTML5 and CSS3, 7th Edition
+   Tutorial 2
+   Case Problem 4
+   
+   Great Lakescape Lodge Style Sheet
+   Author: Anthony S.A Gradillas
+   Date:   9.12.18
+   
+   Filename: lake_styles.css
+
+*/
+
+/* So I set up a html element to start me off and I changed the background color the best I could to resemble the actual color of the example given. For the body element though I just changed it to not so much of a white, but a bluish white. While for the footer elemenent I changed the padding and aligned it to the center and I changed the background color to a dark grey, but for the header I just changed the background color to resemble the background color in the example. */
+
+
+/* Structural Styles */
+html {
+    background-color: #a7bd74;
+}
+
+body {
+    background-color: aliceblue;
+}
+
+footer {
+    background-color: #727070d0;
+    padding: 5px 10px 5px 10px;
+    text-align: center;
+}
+
+header {
+    background-color: #583470;
+}
+
+/* I changed the header links to where if you hover over it the background would be a dark grey. Also, I got rid of the underlining and made the actual color not so much of a bright white but a faded white. */
+
+/* Header Style */
+
+header nav a:link,
+header nav a:visited {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.685);
+}
+
+header nav a:hover,
+header nav a:active {
+    background-color: #696969d0;
+}
+
+/* For this one I changed the actual sections leftcol and rightcol's h1 and h2 to be champagne, cursive that was given to me and increased the font-size and padding. Then I changed the leftcol's paragraphs to just be pusshed from the left a bit. Also, I made the bacjground color look somewhat of the same like the example. */
+
+/* Body Styles */
+section#leftcol h1 {
+    font-family: Champagne, cursive;
+    font-size: 2.4em;
+    padding-left: 10px;
+}
+
+section#leftcol p {
+    padding-left: 10px;
+}
+
+section#rightcol {
+    padding-left: 10px;
+    background-color: #bfa1cc;
+}
+
+section#rightcol h2 {
+    font-family: Champagne, cursive;
+    font-size: 1.5em;
+    padding-left: 20px;
+}
+
+nav>ul {
+    list-style-type: none;
+    line-height: 2em;
+    font-size: 0.9em;
+}
+
+section#rightcol nav a:link,
+section#rightcol nav a:visited {
+    text-decoration: none;
+    color: black;
+}
+
+section#rightcol nav a:hover,
+section#rightcol nav a:active {
+    background-color: #919191d0;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
